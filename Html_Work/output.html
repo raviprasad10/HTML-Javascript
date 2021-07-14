@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>output</title>
+    <script type="text/javascript">
+        function add(){
+        num1=parseInt(prompt("Enter First Number.",0))
+        num2=parseInt(prompt("Enter Second Number.",0))
+        document.forms["form"]["resultadd"].value = num1+num2;
+        }
+
+    </script>
+
+
+</head>
+<body onload="add();">
+<h1>
+    Output Element.
+</h1>
+    <form name="form">
+
+        Adding the two numbers:
+        <output name="resultadd"></output>
+    </form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <script type="application/x-javascript">
+        function displayCanvas(){
+            var mycanvas=document.getElementById("mycanvas");
+            if (mycanvas.getContext)
+            {
+                var context=mycanvas.getContext('2d');
+
+                context.fillStyle="rgb(50,0,0)";
+                context.fillRect(0,0,150,75)
+                context.fillStyle="rgba(0,200,50,0.5)";
+                context.fillRect(0,0,125,100);
+            }}
+    </script>
+</head>
+<body onload="displayCanvas();">
+
+<canvas id="mycanvas" width="300" height="200">
+    your browser doesn't support canvas
+</canvas>
+
+</body>
+</html>

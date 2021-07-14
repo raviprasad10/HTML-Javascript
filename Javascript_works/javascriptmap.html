@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript map</title>
+    <script type="text/javascript">
+        function details(txt)
+        {
+
+        document.getElementById("description").src=txt
+
+        }
+    </script>
+
+</head>
+<body>
+
+<img src="r1.jpg" width="1000" height="1000" alt="ravi" usemap="#ravimap">
+<map name="ravimap">
+    <area shape="rect" coords="2,7,22,50" onmouseover="details('r2.jpg')">
+    <area shape="circle" coords="90,60,10" onmouseover="details('r1.jpg')">
+
+</map>
+<br>
+<img id="description">
+<p id="description1"></p>
+
+
+</body>
+</html>

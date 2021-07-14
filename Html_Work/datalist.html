@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>datalist</title>
+</head>
+<body>
+<form>
+    <p> Enter name of your favourite car :</p>
+    <input type="text" id="favcar" name="favCar" list="cars">
+    <input type="submit" onclick="alert(document.getElementById('favcar').value)">
+
+    <datalist id="cars">
+
+        <option value="BMW">
+        <option value="Porsche">
+        <option value="Cruze">
+        <option value="Ferrari">
+
+    </datalist>
+</form>
+
+</body>
+</html>

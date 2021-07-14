@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WordCount</title>
+</head>
+<body style="background-color:orange">
+
+<script type="text/javascript">
+    function countit(){
+
+    var date1= new Date();
+    var prom=alert(date1.getFullYear())
+    var writtenWords=document.form.words.value
+
+    var writtenContent=writtenWords.split(' ')
+
+    document.form.count.value= writtenContent.length
+
+
+
+    }
+
+</script>
+
+<form name="form">
+<textarea name="words" rows="12" cols="38" wrap="virtual" style="color:pink; background-color:blue;font-size:20px"></textarea><br>
+<input type="button"  value="Count Words" onclick="countit()">
+<input name="count" type="text" size="20">
+</form>
+
+
+</body>
+</html>

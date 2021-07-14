@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hidden Fields</title>
+</head>
+<body>
+
+<form>
+
+    UserName:<input type="text" id="name" name="user"><br>
+    <input type="hidden" id="country" value="India"><br>
+
+   <input type="submit" onclick="alert( 'Hello,'+ document.getElementById('name').value+' from '+
+    document.getElementById('country').value)" value="Submit">
+
+
+
+</form>
+
+</body>
+</html>
